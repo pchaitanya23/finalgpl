@@ -1,0 +1,100 @@
+.flipCard {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #f1f1f1;
+  margin:30px;
+  border-radius: 50%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flipCardBack, .flipCardFront, .flipCardInner{
+  border-radius: 50%;
+}
+/* This container is needed to position the front and back side */
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flipCardFront, .flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* -webkit-backface-visibility: hidden; Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipCardFront {
+  /* background-color: #bbb; */
+  color: black;
+}
+
+/* Style the back side */
+.flipCardBack {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.team1{
+  display: flex;
+  flex-direction: row;
+}
+.flipCard{
+  min-width: 300px;
+}
+.flipCard >img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.flipCardFront{
+  display: flex;
+  justify-content: center;
+}
+.team1{
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.flipCardFront >Image{
+  border-radius: 50%;
+}
+.flipCardBack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team1{
+  padding-top: 50px;
+}
+img{
+  /* border-radius: 50%; */
+  width: 100%;
+}
+.cardimage{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.firstCard{
+  position: sticky;
+  background-color: blue;
+  visibility: hidden;
+}

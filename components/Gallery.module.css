@@ -1,0 +1,367 @@
+.breadcrumbs {
+    padding: 15px 0;
+    background: #f5f7fb;
+    min-height: 40px;
+    margin-top: 70px;
+  }
+  
+  @media (max-width: 992px) {
+    .breadcrumbs {
+      margin-top: 58px;
+    }
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 28px;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .breadcrumbs ol li+li {
+    padding-left: 10px;
+  }
+  
+  .breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #324682;
+    content: "/";
+  }
+  
+  @media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+      display: block !important;
+    }
+  
+    .breadcrumbs ol {
+      display: block;
+    }
+  
+    .breadcrumbs ol li {
+      display: inline-block;
+    }
+  }
+
+
+  .gallery .galleryItem {
+    margin-bottom: 30px;
+  }
+  
+  .gallery #galleryFlters {
+    padding: 0;
+    margin: 0 auto 25px auto;
+    list-style: none;
+    text-align: center;
+    border-radius: 50px;
+  }
+  
+  .gallery #galleryFlters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+  }
+  
+  .gallery #galleryFlters li:hover,
+  .gallery #galleryFlters li.filterActive {
+    color: #006fbe;
+  }
+  
+  .gallery #galleryFlters li:last-child {
+    margin-right: 0;
+  }
+  
+  .gallery .galleryWrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(36, 50, 93, 0.6);
+  }
+  
+  .gallery .galleryWrap::before {
+    content: "";
+    background: rgba(36, 50, 93, 0.6);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  .gallery .galleryWrap .galleryInfo {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gallery .galleryWrap .galleryInfo::before {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+  }
+  
+  .gallery .galleryWrap .galleryInfo::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+  }
+  
+  .gallery .galleryWrap .galleryInfo h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .gallery .galleryWrap .galleryInfo p {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .gallery .galleryWrap .galleryLinks {
+    text-align: center;
+    z-index: 4;
+  }
+  
+  .gallery .galleryWrap .galleryLinks a {
+    color: #fff;
+    margin: 0 2px;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .gallery .galleryWrap .galleryLinks a:hover {
+    color: #25a4ff;
+  }
+  
+  .gallery .galleryWrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .gallery .galleryWrap:hover .galleryInfo {
+    opacity: 1;
+  }
+  
+  .gallery .galleryWrap:hover .galleryInfo::before {
+    top: 15px;
+    left: 15px;
+  }
+  
+  .gallery .galleryWrap:hover .galleryInfo::after {
+    bottom: 15px;
+    right: 15px;
+  }
+
+
+  #footer {
+    background: #1d284b;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  #footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  #footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .socialLinks {
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .socialLinks a {
+    font-size: 18px;
+    display: inline-block;
+    background: #006fbe;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .socialLinks a:hover {
+    background: #007ed8;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+  }
+  
+  #footer .credits a {
+    color: #006fbe;
+    transition: 0.3s;
+  }
+  
+  #footer .credits a:hover {
+    color: #008df1;
+  }
+
+
+  body{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.gallery{
+    /* display: flex; */
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    margin: 100px;
+}
+.items{
+    width: 100%;
+}
+.text{
+    width: 50%;
+
+}
+.photo{
+    width: 50%;
+    /* height: 300px; */
+}
+img{
+    /* height: 300px; */
+    width: 100%;
+    /* width: 300px; */
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-brands{
+    align-items: center;
+    /* margin-left: auto; */
+    display: block;
+}
+.soc{
+    background-color: blue;
+    margin: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
+}
+
+.row:nth-child(even){
+  flex-direction: row-reverse;
+  /* margin-right: 20px; */
+}
+
+.text{
+  padding: 20px;
+}
+
+.another{
+  display: flex;
+  margin: 0 10vw;
+}
+
+.anrow{
+  width: 25vw;
+  margin: 2.5vw;
+}
+.anrow>h1{
+  /* width: 25vw; */
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .row{
+    flex-direction: column;
+  }
+  .text{
+    width: 100%;
+  }
+  .photo{
+    width: 100%;
+  }
+  .gallery:last-child{
+    flex-direction: row;
+  }
+}

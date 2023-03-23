@@ -1,0 +1,189 @@
+.breadcrumbs {
+    padding: 15px 0;
+    background: #f5f7fb;
+    min-height: 40px;
+    margin-top: 70px;
+  }
+  
+  @media (max-width: 992px) {
+    .breadcrumbs {
+      margin-top: 58px;
+    }
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 28px;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .breadcrumbs ol li+li {
+    padding-left: 10px;
+  }
+  
+  .breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #324682;
+    content: "/";
+  }
+  
+  @media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+      display: block !important;
+    }
+  
+    .breadcrumbs ol {
+      display: block;
+    }
+  
+    .breadcrumbs ol li {
+      display: inline-block;
+    }
+  }
+  
+  .eventList .card {
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .eventList .cardImg {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+  }
+  
+  .eventList .cardImg img {
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .eventList .cardBody {
+    z-index: 10;
+    background: #fff;
+    border-top: 4px solid #fff;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -60px;
+    transition: 0.3s;
+  }
+  
+  .eventList .cardTitle {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #24325d;
+  }
+  
+  .eventList .cardTitle a {
+    color: #24325d;
+    transition: 0.3s;
+  }
+  
+  .eventList .cardText {
+    color: #5e5e5e;
+  }
+  
+  .eventList .read-more a {
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.3s;
+  }
+  
+  .eventList .read-more a:hover {
+    color: #006fbe;
+  }
+  
+  .eventList .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .eventList .card:hover .cardBody {
+    border-color: #006fbe;
+  }
+  
+  .eventList .card:hover .cardBody .cardTitle a {
+    color: #006fbe;
+  }
+
+  #footer {
+    background: #1d284b;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  #footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  #footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .socialLinks {
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .socialLinks a {
+    font-size: 18px;
+    display: inline-block;
+    background: #006fbe;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .socialLinks a:hover {
+    background: #007ed8;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+  }
+  
+  #footer .credits a {
+    color: #006fbe;
+    transition: 0.3s;
+  }
+  
+  #footer .credits a:hover {
+    color: #008df1;
+  }

@@ -1,0 +1,165 @@
+import React from 'react'
+import css from './LiveScore.module.css'
+export default function Table() {
+
+    const styles = {
+        // display: 'none',
+        // color: 'white',
+        // padding: '10px',
+        // borderRadius: '5px',
+    };
+      const textStyle = {
+        padding: '0 0 0 116px',
+      };
+    return (
+        <>
+            <table className={css.table} style={styles}>
+                <tr>
+                    <th>Batsman</th>
+                    <th>R</th>
+                    <th>B</th>
+                    <th>4's</th>
+                    <th>6's</th>
+                    <th>SR</th>
+                </tr>
+                <tr>
+                    <td>Ganesh</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Chomco</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Saran</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Avinash</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Sathwik</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Macha</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Chaitanya</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Kalyan</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Tantra</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Santosh</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Karthikeya</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <th>Rohit</th>
+                    <th>O</th>
+                    <th>M</th>
+                    <th>R</th>
+                    <th>W</th>
+                    <th>Eco</th>
+                </tr>
+                <tr>
+                    <td>Pulihora(sriram)</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>37</td>
+                    <td>0</td>
+                    <td>6.17</td>
+                </tr>
+                <tr>
+                    <td>Sean Abbott</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>37</td>
+                    <td>0</td>
+                    <td>6.17</td>
+                </tr>
+                <tr>
+                    <td>AnnaPoona</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>37</td>
+                    <td>0</td>
+                    <td>6.17</td>
+                </tr>
+                <tr>
+                    <td>Sanju</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>37</td>
+                    <td>0</td>
+                    <td>6.17</td>
+                </tr>
+                <tr>
+                    <td>Abhinay</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>37</td>
+                    <td>0</td>
+                    <td>6.17</td>
+                </tr>
+            </table>
+
+        </>
+    )
+}
